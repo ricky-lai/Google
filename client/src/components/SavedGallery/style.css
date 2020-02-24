@@ -1,0 +1,25 @@
+.book-list-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.book-column{
+    border: solid;
+    border-width: 2px;
+    margin: 0.5% 0 0.5% 0;
+}
+
+.book-image{
+    margin: 10px;
+
+}
+
+.book-inner-flex{
+    display: flex;
+    flex-direction: row;
+    wrap: nowrap;
+}
+.description{
+    margin-left: 10px;
+}

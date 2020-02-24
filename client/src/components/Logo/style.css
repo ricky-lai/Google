@@ -1,0 +1,9 @@
+.logo-position{
+    align-self: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
