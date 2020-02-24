@@ -1,7 +1,11 @@
 {
-  "name": "mern",
+  "name": "react-google-books",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "",
+  "engines": {
+    "npm": "6.9.0",
+    "node": "11.10.0"
+  },
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -19,13 +23,9 @@
     "nodemon": "^1.18.7"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
-    "mongoose": "^5.4.6",
-    "react": "^16.7.0",
-    "react-bootstrap": "^0.32.4",
-    "react-dom": "^16.7.0",
-    "react-router-dom": "^4.3.1"
+    "mongoose": "^5.7.5"
   }
 }

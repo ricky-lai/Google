@@ -1,26 +1,23 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Search from "./pages/Search";
+import Home from "./pages/Home";
 import Saved from "./pages/Saved";
-import NavTabs from "./components/NavTabs";
-import "./App.css";
+import NoMatch from "./pages/NoMatch";
+import Nav from "./components/Nav";
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
+function App() {
+  return (
+    <Router>
       <div>
-        <NavTabs/>
+        <Nav />
         <Switch>
-          <Route exact path="/" component={Search} />
-          <Route exact path="/search" component={Search} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/saved" component={Saved} />
+          <Route component={NoMatch} />
         </Switch>
       </div>
     </Router>
-    );
-  }
+  );
 }
 
 export default App;
